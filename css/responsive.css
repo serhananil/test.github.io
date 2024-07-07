@@ -1,0 +1,328 @@
+/*------------------------------
+    PRELOADER
+-------------------------------*/
+
+.preeloader {
+    background: rgba(255, 255, 255, 1) none repeat scroll 0 0;
+    height: 100%;
+    position: fixed;
+    width: 100%;
+    z-index: 999999;
+}
+
+.preloader-spinner {
+    -webkit-animation: 1s ease-out 0s normal none infinite running pulsate;
+    animation: 1s ease-out 0s normal none infinite running pulsate;
+    border-radius: 40px;
+    display: block;
+    height: 40px;
+    left: 50%;
+    margin: -20px 0 0 -20px;
+    opacity: 0;
+    position: fixed;
+    top: 50%;
+    width: 40px;
+    z-index: 10;
+}
+
+@keyframes pulsate {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(0.1);
+        transform: scale(0.1);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+}
+
+@-webkit-keyframes pulsate {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(0.1);
+        transform: scale(0.1);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+}
+
+
+/*----------------------------------
+    MEDIUM LAYOUT: 1280px
+-----------------------------------*/
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .area-title h2 {
+        letter-spacing: inherit;
+    }
+    .side-push-menu {
+        height: 80px;
+        padding-top: 35px;
+    }
+    .is-sticky .side-push-menu {
+        height: 60px;
+        padding-bottom: 20px;
+        padding-top: 17px;
+    }
+    .is-sticky .navbar-header {
+        margin-top: 17px;
+    }
+    .navbar-brand > img {
+        width: 80%;
+    }
+    /*--------------------------*/
+    .logo {
+        margin-top: 12px;
+    }
+    .area-title h2 {
+        font-size: 30px;
+    }
+    .mainmenu li a {
+        display: inline-block;
+        padding: 30px 7px;
+    }
+    .is-sticky .mainmenu li a {
+        padding: 15px 7px;
+    }
+    .single-promotions h4 {
+        font-size: 16px;
+    }
+    .single-appoinment-box h3 {
+        font-size: 16px;
+    }
+    .bottom-founder-area {
+        padding-top: 200px;
+    }
+}
+
+
+/*----------------------------------
+    TABLET LAYOUT: 768px
+------------------------------------*/
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .section-padding {
+        padding: 80px 0;
+    }
+    .padding-top {
+        padding-top: 80px;
+    }
+    .mainmenu-area-bg {
+        border-bottom: 1px solid;
+        opacity: 0.8;
+    }
+    .is-sticky .logo {
+        margin-top: 0;
+    }
+    .navbar-brand > img {
+        -webkit-transition: all 0.3s ease 0s;
+        transition: all 0.3s ease 0s;
+        width: 68%;
+    }
+    .is-sticky .navbar-brand img {
+        margin-top: 8px;
+    }
+    .mainmenu li a {
+        font-size: 12px;
+        letter-spacing: 2px;
+    }
+    .mainmenu li a::before {
+        display: none;
+    }
+    /*-----------------*/
+    .welcome-text {
+        text-align: center;
+    }
+    .welcome-text h1 {
+        font-size: 36px;
+    }
+    .about-content {
+        margin-bottom: 50px;
+    }
+    .layer-two {
+        margin-top: 0px;
+    }
+    .promotions-area.section-padding {
+        padding-bottom: 50px;
+    }
+    .testmonial-area-bg {
+        background: rgba(0, 0, 0, 0) -webkit-gradient(linear, right top, left bottom, from(#00c9ff), to(#92fe9d)) repeat scroll 0 0;
+        background: rgba(0, 0, 0, 0) linear-gradient(to left bottom, #00c9ff, #92fe9d) repeat scroll 0 0;
+    }
+    .single-appoinment-box {
+        margin-bottom: 30px;
+    }
+
+    .founder-details {
+        position: relative;
+        z-index: 9;
+    }
+    .founder-name-and-title {
+        margin-top: 20px;
+    }
+    .founder-image {
+        bottom: -80px;
+    }
+    .footer-copyright,
+    .footer-social-boomark {
+        text-align: center;
+    }
+}
+
+
+/*----------------------------------
+    MOBILE LAYOUT: 320px
+-----------------------------------*/
+
+@media only screen and (max-width: 767px) {
+    .section-padding {
+        padding: 50px 0;
+    }
+    .area-title {
+        margin-bottom: 50px;
+    }
+    .area-title h2,
+    .area-title h3 {
+        font-size: 24px;
+    }
+    .padding-top {
+        padding-top: 50px;
+    }
+    .is-sticky .navbar-brand {
+        margin-top: 6px;
+    }
+    .navbar-brand img {
+        width: 70%;
+    }
+    .is-sticky .navbar-brand > img {
+        width: 70%;
+    }
+    .navbar-collapse {
+        padding: 0;
+    }
+    .mainmenu-area-bg {
+        border-bottom: 1px solid;
+        opacity: 0.8;
+    }
+    .mainmenu li a {
+        font-size: 12px;
+        letter-spacing: 2px;
+    }
+    .mainmenu li a::before {
+        display: none;
+    }
+    /*-----------------*/
+    .top-bar {
+        display: none;
+    }
+    .welcome-text {
+        text-align: center;
+        font-size: 18px;
+        height: 370px;
+    }
+    .welcome-text p {
+        display: none;
+    }
+    .call-to-action {
+        display: none;
+    }
+    .welcome-text h2 {
+        background: transparent none repeat scroll 0 0;
+        border: 0 none;
+        color: #fff;
+        font-weight: 400;
+        line-height: 1.5;
+    }
+    .welcome-text h1 {
+        font-size: 26px;
+        line-height: 1.5;
+        margin-bottom: 10px;
+    }
+    .area-title-and-icon > h2 {
+        font-size: 24px;
+    }
+    .about-content {
+        margin-bottom: 50px;
+    }
+    .layer-two {
+        margin-top: 0px;
+    }
+    .row.service-top-content {
+        display: inherit;
+        overflow: hidden;
+    }
+    .service-menu li.active a::after {
+        display: none;
+    }
+    .single-team {
+        margin-bottom: 30px;
+    }
+    .team-area .row div:last-child .single-team {
+        margin-bottom: 0;
+    }
+    .promotions-area.section-padding {
+        padding-bottom: 30px;
+    }
+    .testmonial-area-bg {
+        background: rgba(0, 0, 0, 0) -webkit-gradient(linear, right top, left bottom, from(#00c9ff), to(#92fe9d)) repeat scroll 0 0;
+        background: rgba(0, 0, 0, 0) linear-gradient(to left bottom, #00c9ff, #92fe9d) repeat scroll 0 0;
+    }
+    .founder-image {
+        bottom: -50px;
+        position: inherit;
+    }
+    .single-appoinment-box {
+        margin-bottom: 30px;
+    }
+    .founder-details {
+        position: relative;
+        z-index: 9;
+    }
+    .founder-details h2 {
+        font-size: 24px;
+    }
+    .footer-copyright,
+    .footer-social-boomark {
+        text-align: center;
+    }
+}
+
+
+/*----------------------------------
+    WIDE MOBILE LAYOUT: 480px
+-----------------------------------*/
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .section-padding {
+        padding: 50px 0;
+    }
+    .area-title h2 {
+        font-size: 30px;
+    }
+    .welcome-text h1 {
+        font-size: 32px;
+    }
+    .navbar-brand {
+        margin-top: 0;
+    }
+    .single-features {
+        text-align: center;
+    }
+    .single-features .features-icon {
+        margin: 0 auto 20px;
+    }
+    .about-area img {
+        width: 100%;
+    }
+}
